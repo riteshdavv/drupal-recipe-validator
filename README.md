@@ -20,7 +20,7 @@ Each stage only runs if the previous stage passed - syntax errors are caught bef
 git clone https://github.com/riteshdavv/drupal-recipe-validator
 cd drupal-recipe-validator
 composer install
-chmod +x bin/validate-recipe
+php bin/validate-recipe
 ```
 
 ## Usage
