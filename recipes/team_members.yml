@@ -1,0 +1,12 @@
+name: 'Team Members'
+type: Recipe
+description: 'Adds a Team Members content type with role and bio fields.'
+install:
+  - node
+  - text
+  - image
+config:
+  import:
+    node.type.team_member: '*'
+    field.storage.node.field_role: '*'
+    field.field.node.team_member.field_role: '*'

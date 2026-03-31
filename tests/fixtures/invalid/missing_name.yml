@@ -1,0 +1,4 @@
+# Missing required 'name' key
+type: Recipe
+install:
+  - node

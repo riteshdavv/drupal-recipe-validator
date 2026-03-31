@@ -1,0 +1,9 @@
+name: 'Bad Module Names'
+type: Recipe
+description: 'This recipe has invalid machine names in the install array.'
+install:
+  - node
+  - FieldUI
+  - my-custom-module
+  - _bad_start
+  - 1startsWithNumber

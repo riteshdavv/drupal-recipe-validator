@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use DrupalRecipeValidator\Command\ValidateCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('Drupal Recipe Validator', '1.0.0');
+$application->add(new ValidateCommand());
+$application->setDefaultCommand('validate', true);
+$application->run();

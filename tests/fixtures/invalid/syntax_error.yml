@@ -1,0 +1,6 @@
+name: 'Broken YAML
+type: Recipe
+install:
+  - node
+  - : bad_mapping
+  indentation_error

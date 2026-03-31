@@ -1,0 +1,4 @@
+name: 'Wrong Type'
+type: Module
+install:
+  - node

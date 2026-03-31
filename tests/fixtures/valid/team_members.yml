@@ -1,0 +1,17 @@
+name: 'Team Members'
+type: Recipe
+description: 'Adds a Team Member content type with photo, bio, and a grid view.'
+install:
+  - node
+  - field_ui
+  - text
+  - image
+  - views
+config:
+  import:
+    node.type.team_member: '*'
+    field.storage.node.field_photo: '*'
+    field.field.node.team_member.field_photo: '*'
+    field.storage.node.field_bio: '*'
+    field.field.node.team_member.field_bio: '*'
+    views.view.team_members_grid: '*'

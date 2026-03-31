@@ -1,0 +1,17 @@
+name: 'Blog'
+type: Recipe
+description: 'Adds a Blog content type with tags taxonomy, body, and featured image.'
+install:
+  - node
+  - taxonomy
+  - text
+  - image
+  - field_ui
+config:
+  import:
+    node.type.blog_post: '*'
+    taxonomy.vocabulary.tags: '*'
+    field.storage.node.field_tags: '*'
+    field.field.node.blog_post.field_tags: '*'
+    field.storage.node.field_featured_image: '*'
+    field.field.node.blog_post.field_featured_image: '*'
